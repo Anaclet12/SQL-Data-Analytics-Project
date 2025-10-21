@@ -1,12 +1,8 @@
 # SQL-Data-Analytics-Project
 
-A comprehensive collection of SQL scripts for data exploration, analytics, and reporting. These scripts cover various analyses such as database exploration, measures and metrics, time-based trends, cumulative analytics, segmentation, and more. This repository contains SQL queries designed to help data analysts and BI professionals quickly explore, segment, and analyze data within a relational database. Each script focuses on a specific analytical theme and demonstrates best practices for SQL queries.
-
-# Data Analytics Project
-
 This repository is the **second phase** of my [Data-Warehouse-Project](https://github.com/Anaclet12/SQL-Data-Warehouse-Project) — extending the work from **data integration and modeling** to **data analysis and insight generation**.
 
-The project demonstrates the complete analytical journey, from structured data stored in the warehouse to actionable business insights through **SQL-based exploration**, **statistical reasoning**, and **visual storytelling**.
+The project demonstrates the complete analytical journey, from structured data stored in the warehouse to actionable business insights through **SQL-based exploration** and **statistical reasoning**.
 
 ---
 
@@ -40,3 +36,5 @@ After the data is cleaned, structured, and understood, this phase applies **busi
 9. **Part-to-Whole Analysis** – determining contribution ratios (e.g., product share).  
 10. **Segmentation** – grouping data based on behavioral or performance patterns.  
 11. **Reporting** – creating visual dashboards and summaries for business decisions.  
+
+This project serves as a practical demonstration of my SQL proficiency, showcasing my ability to design, query, and analyze data to generate meaningful insights.
