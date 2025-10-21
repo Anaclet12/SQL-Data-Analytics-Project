@@ -4,7 +4,7 @@ A comprehensive collection of SQL scripts for data exploration, analytics, and r
 
 # 🧠 Data Analytics Project — Continuation of *Data-Warehouse-Project*
 
-This repository is the **second phase** of my [Data-Warehouse-Project](https://github.com/Anaclet12/data-warehouse-project) — extending the work from **data integration and modeling** to **data analysis and insight generation**.
+This repository is the **second phase** of my [Data-Warehouse-Project](https://github.com/Anaclet12/SQL-Data-Warehouse-Project) — extending the work from **data integration and modeling** to **data analysis and insight generation**.
 
 The project demonstrates the complete analytical journey, from structured data stored in the warehouse to actionable business insights through **SQL-based exploration**, **statistical reasoning**, and **visual storytelling**.
 
