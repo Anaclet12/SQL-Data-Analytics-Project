@@ -2,7 +2,12 @@
 
 This repository is the **second phase** of my [Data-Warehouse-Project](https://github.com/Anaclet12/SQL-Data-Warehouse-Project) — extending the work from **data integration and modeling** to **data analysis and insight generation**.
 
-The project demonstrates the complete analytical journey, from structured data stored in the warehouse to actionable business insights through **SQL-based exploration** and **statistical reasoning**.
+The project demonstrates the complete analytical journey, from **structured data stored in the warehouse** to **actionable business insights** through SQL-based exploration and statistical reasoning.
+
+The dataset used in this project originates from the **final layer of the Data Warehouse**, specifically the curated **Gold Layer** views:
+- `gold.fact_sales`
+- `gold.dim_customers`
+- `gold.dim_products`
 
 ---
 
