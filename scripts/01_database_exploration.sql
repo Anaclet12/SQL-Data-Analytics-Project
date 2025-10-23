@@ -14,13 +14,9 @@ Table Used:
 
 -- Retrieve the list of all tables or views in Gold schema
 SELECT 
-    TABLE_CATALOG, 
-    TABLE_SCHEMA, 
-    TABLE_NAME, 
-    TABLE_TYPE
+   *
 FROM INFORMATION_SCHEMA.TABLES
-WHERE TABLE_SCHEMA = 'gold'
-  AND TABLE_TYPE IN ('BASE TABLE', 'VIEW');
+WHERE TABLE_SCHEMA = 'gold';
 
 -- Retrieve the list of all columns in sales table
 SELECT 
