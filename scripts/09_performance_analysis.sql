@@ -32,24 +32,26 @@ CASE WHEN avg_change < 0 THEN 'Bellow Avg'
 	 WHEN avg_change > 0 THEN 'Above Avg'
 	 ELSE 'Avg'
 END sls_vs_avg
-FROM
-(SELECT 
-order_year,
-product_name,
-current_sales,
-LAG(current_sales) OVER(PARTITION BY product_name ORDER BY order_year) pr_sales,
-current_sales - LAG(current_sales) OVER(PARTITION BY product_name ORDER BY order_year) yoy_sales,
-AVG(current_sales) OVER(PARTITION BY product_name) prd_avg_sls_per_year,
-current_sales - AVG(current_sales) OVER(PARTITION BY product_name) avg_change
-FROM (
+FROM(
+	-- add the year over year sales and the sales vs the avg
 	SELECT 
-	EXTRACT(YEAR FROM order_date) order_year,
+	order_year,
 	product_name,
-	SUM(sales_amount) current_sales
-	FROM gold.fact_sales
-	LEFT JOIN gold.dim_products
-	USING (product_key)
-	WHERE order_date IS NOT NULL
-	GROUP BY 1,2
-	))
+	current_sales,
+	LAG(current_sales) OVER(PARTITION BY product_name ORDER BY order_year) pr_sales,
+	current_sales - LAG(current_sales) OVER(PARTITION BY product_name ORDER BY order_year) yoy_sales,
+	AVG(current_sales) OVER(PARTITION BY product_name) prd_avg_sls_per_year,
+	current_sales - AVG(current_sales) OVER(PARTITION BY product_name) avg_change
+	FROM (
+	    -- group the total sales by year and by product
+		SELECT 
+		EXTRACT(YEAR FROM order_date) order_year,
+		product_name,
+		SUM(sales_amount) current_sales
+		FROM gold.fact_sales
+		LEFT JOIN gold.dim_products
+		USING (product_key)
+		WHERE order_date IS NOT NULL
+		GROUP BY 1,2
+		))
 
