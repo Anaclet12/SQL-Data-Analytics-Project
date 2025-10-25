@@ -40,6 +40,5 @@ After the data is cleaned, structured, and understood, this phase applies **busi
 8. **Performance Analysis** – evaluating KPIs and comparing performance periods.  
 9. **Part-to-Whole Analysis** – determining contribution ratios (e.g., product share).  
 10. **Segmentation** – grouping data based on behavioral or performance patterns.  
-11. **Reporting** – creating visual dashboards and summaries for business decisions.  
 
 This project serves as a practical demonstration of my SQL proficiency, showcasing my ability to design, query, and analyze data to generate meaningful insights.
