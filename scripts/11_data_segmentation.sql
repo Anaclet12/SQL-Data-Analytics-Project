@@ -40,7 +40,6 @@ SELECT
 COUNT(*) customer_number,
 customer_group
 FROM (
-
 	SELECT
 	*,
 	CASE WHEN (EXTRACT(YEAR FROM lifespan)*12 + EXTRACT(MONTH FROM lifespan)) >= 12 AND total_sales > 5000 THEN 'VIP'
